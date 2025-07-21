@@ -36,7 +36,7 @@ nav a:hover {
 }
 #hero {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-top: -100px; 
     box-shadow: 5px 5px 10px #6f7364;
 }
@@ -231,5 +231,131 @@ footer p a:hover {
     }
     footer {
         margin-top: 25px;
+    }
+}
+/*rivers page*/ 
+/* River Tours Subpage Only */
+
+/* Center content and set max width */
+#river-content{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.river-grid {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 3rem 4rem;
+    gap: 3rem; 
+    display: grid;
+    background-color: #eaeaea;
+}
+
+/* Center the page title */
+#intro h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    font-family: 'Poiret One', 'cascadia code', 'monaco';
+    color: #0055a5; /* Matches your header/footer blue */
+    font-weight: bold;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+/* Each river section */
+#fork, #gray, #grand {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Flip layout for gray canyon */
+#gray {
+    flex-direction: row-reverse;
+}
+
+/* Text block */
+section {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family:'Roboto', Helvetica, sans-serif;
+}
+
+/* Image container with overlay */
+.image-box {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    flex-shrink: 0;
+    border: 1px solid burlywood;
+}
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.river-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ebebeb;
+    font-size: 0.95rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 4px 0;
+    border-bottom: 1px solid black;
+}
+.river-grid #fork,.river-grid #gray,.river-grid #grand {
+    margin-bottom: 3rem; /* space between sections */
+    padding-bottom: 1rem;
+    border-bottom: 1px solid transparent;
+}
+.river-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: #3a6ea5;/* subtle blue tint background */
+    box-shadow: 5px 5px 10px #6f7364;
+    flex-wrap: wrap;
+}
+.river-grid .river-box section {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: white; /* ensures contrast on blue background */
+    max-width: 500px;
+}
+
+@media (max-width: 767px) {
+    .river-grid {
+        padding: 1.5rem 1rem;
+        max-width: 100%;
+    }
+
+    .river-grid #fork,.river-grid #gray,.river-grid #grand {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .river-grid .image-box {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    .river-grid section {
+        max-width: 95%;
     }
 }

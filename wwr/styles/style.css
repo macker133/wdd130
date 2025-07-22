@@ -1,100 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-.contactus {
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-.box {
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 16px;
-  padding: 30px 40px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-}
-.contact-form {
-  display: flex;
-  flex-direction: column;
-}
-.contact-form label {
-  margin: 10px 0 5px;
-  font-size: 16px;
-}
-.contact-form input, .contact-form textarea {
-  padding: 8px;
-  border: 1px solid #888;
-  border-radius: 4px;
-  width: 300px;
-  box-sizing: border-box;
-}
-.contact-form textarea {
-  resize: vertical;
-  height: 100px;
-}
-.contact-form button {
-  margin-top: 15px;
-  padding: 8px 12px;
-  background-color: #fff;
-  border: 1px solid #444;
-  cursor: pointer;
-}
-.contact-form button:hover {
-  background-color: #f0f0f0;
-}
-#feedback {
-    background-color: antiquewhite;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: .5em;
-    /* make this element invisible until we are ready for it */
-    display: none;      
-}
-.moveDown {
-    margin-top: 3em;
-}
-@media (max-width: 767px) {
-  .box {
-    padding: 20px 15px;
-    width: 95%;
-    border-radius: 10px;
-    box-shadow: none;
-  }
 
-  .contact-form label {
-    font-size: 14px;
-    margin: 8px 0 4px;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    font-size: 16px;
-  }
-
-  .contact-form button {
-    width: 100%;
-    font-size: 16px;
-    padding: 10px;
-  }
-
-  #feedback {
-    font-size: 14px;
-    padding: 10px;
-    position: static;
-    margin-top: 10px;
-  }
-
-  .moveDown {
-    margin-top: 2em;
-  }
-}
-/*end form*/
 .home-title {
     font-family: 'Poiret One', 'cascadia code', 'monaco';
     font-size: 2em;
@@ -442,3 +347,99 @@ section {
         max-width: 95%;
     }
 }
+.contactus {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.box {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  padding: 30px 40px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form label {
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+.contact-form input, .contact-form textarea {
+  padding: 8px;
+  border: 1px solid #888;
+  border-radius: 4px;
+  width: 300px;
+  box-sizing: border-box;
+}
+.contact-form textarea {
+  resize: vertical;
+  height: 100px;
+}
+.contact-form button {
+  margin-top: 15px;
+  padding: 8px 12px;
+  background-color: #fff;
+  border: 1px solid #444;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background-color: #f0f0f0;
+}
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}
+@media (max-width: 767px) {
+  .box {
+    padding: 20px 15px;
+    width: 95%;
+    border-radius: 10px;
+    box-shadow: none;
+  }
+
+  .contact-form label {
+    font-size: 14px;
+    margin: 8px 0 4px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .contact-form button {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  #feedback {
+    font-size: 14px;
+    padding: 10px;
+    position: static;
+    margin-top: 10px;
+  }
+
+  .moveDown {
+    margin-top: 2em;
+  }
+}
+/*end form*/

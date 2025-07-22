@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Stardos+Stencil:wght@400;700&display=swap');
+
+/*header*/
+header {
+    display: flex;
+    justify-content: flex-start; /* space between logo/title and nav */
+    align-items: center;            /* vertically center */
+    padding: 0 2rem;
+    height: 100px;
+    background-color: #004e98;
+    color: white;
+}
+nav {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin-left: 2rem;
+    padding: 0;
+    justify-content: flex-end;
+}
+nav a {
+    font-family:'Roboto', Helvetica, sans-serif;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    padding: 35px;
+    font-size: 1.5em;
+}
+nav a:hover {
+    background-color: #aa900c;
+    color: white;
+}
+#logo_link {
+    padding-top: 5px; 
+    justify-self: center;
+    align-self: center;
+}
+.logo {
+    width: 80px;
+}
+/* end header*/
+
+/*index*/
+#homepage {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.home-title {
+    font-family:"Stardos Stencil";
+    font-size: 2em;
+    margin-top: 10px;
+}
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: -50px; 
+    box-shadow: 5px 5px 10px #6f7364;
+}
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+#hero-msg h1 {
+    text-align: center;
+    color: #ffc300;
+    font-size: 3rem;
+}
+#hero-img {
+    width: 100%;
+    image-rendering: auto;
+}
+.clip-art { 
+    text-align: center;
+    border: 10px solid #3a6ea5;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.clip-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+  height: 50vh;           
+}
+.clip-container img {
+  width: 250px;  
+  height: auto; 
+} 
+.getting-started {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;      
+  height: 20vh;           
+  text-align: center;      
+  padding: 2rem;
+}
+.getting-started h2 {
+  font-size: 3rem;          
+  margin-bottom: 1rem;
+  font-family:"Stardos Stencil";
+}
+.getting-started p {
+  font-size: 1.5rem;        
+  line-height: 1.6;
+  font-family: "Forum&family", arial, Helvetica;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+@media screen and (max-width: 767px) {
+#hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+}
+#hero-box {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+#hero-msg {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-top: 30px;
+    padding: 0 1rem;
+}
+#hero-msg h1 {
+    font-size: 2rem;
+}
+.home-title {
+    font-size: 1.5em;
+    text-align: center;
+}
+.clip-container {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 0;
+}
+.clip-container img {
+    width: 80%;
+    max-width: 200px;
+    margin: 10px 0;
+}
+.getting-started {
+    height: auto;
+    padding: 1.5rem 1rem;
+}
+.getting-started h2 {
+    font-size: 2rem;
+}
+.getting-started p {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0 1rem;
+}
+}
+
+/* end index*/
+
+/*clothing*/
+.clothing-page {
+  background-color: white;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Stardos Stencil";
+  font-size: 3em;
+}
+.clothing-section {
+  margin-top: 40px;
+}
+.clothing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+#clothbackground {
+    background-color: #4d7ba8; 
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    font-family: "Forum&family", arial, Helvetica;
+}
+.clothing-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+.sleeping-section {
+  margin-top: 60px;
+}
+#sleepbackground {
+  background-color: #4d7ba8; 
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  font-family: "Forum&family", arial, Helvetica;
+}
+@media (max-width: 767px) {
+  .clothing-grid {
+    grid-template-columns: 1fr; /* Stack items vertically */
+  }
+  .clothing-grid img {
+    max-width: 100%;
+    height: auto;
+    max-height: none; /* Let it resize naturally on small screens */
+    margin-top: 20px;
+  }
+  #clothbackground, 
+  #sleepbackground {
+    text-align: left;  /* Optional: revert to left-align for readability */
+    font-size: 16px;   /* Ensure readability */
+  }
+  main.clothing-page {
+    padding: 10px; /* Less padding on small screens */
+  }
+}
+/*end clothing*/
+
+/*essentials*/
+.essentials-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+.essentials-page h2 {
+  text-align: center;
+  font-style: italic;
+  margin-top: 40px;
+}
+.misc-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  align-items: center;
+  position: relative;
+  margin-top: 30px;
+}
+.misc-row img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  position: relative;
+  z-index: 1;
+  margin-left: 0;
+}
+.misc-row p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 20px;
+  margin-left: -50px;
+  z-index: 2;
+  position: relative;
+  background-color: #4d7ba8; 
+  color: white;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.grid-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  text-align: center;
+  margin-top: 110px;
+}
+.grid-icons img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.grid-icons p {
+  margin-top: 8px;
+  font-weight: bold;
+}
+.wellness {
+  text-align: center;
+  margin-top: 60px;
+}
+.wellness p {
+  background-color: #4d7ba8; 
+  color: white;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.6;
+  border-radius: 10px;
+  text-align: center;
+}
+.essentials-page section {
+  margin-bottom: 60px;
+}
+@media (max-width: 768px) {
+.misc-row {
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+.misc-row img {
+    margin: 0 auto;
+    max-width: 100%;
+}
+.misc-row p {
+    margin-left: 0;
+    padding: 15px;
+}
+.grid-icons {
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.wellness p {
+    padding: 15px;
+}
+}
+/*end essentials*/
+
+/*footer*/
+footer, footer a{
+    background-color: #004e98;
+    color: white;
+    text-decoration: none;
+}
+footer {
+    padding: 25px 50px;
+    margin-top: 100px;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer p{
+    font-family:"Forum&family", arial, Helvetica;
+    font-size: 1.5em;
+    margin-left: 1em;
+    margin-right: 3em;
+}
+footer p a:hover {
+    font-family:"Forum&family", arial, Helvetica;
+    text-decoration: underline;
+}
+/* end footer*/
